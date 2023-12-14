@@ -37,14 +37,5 @@ if [[ "$RUN_SCRIPTS" == "1" ]] ; then
   fi
 fi
 
-# switch nobody user
-su root -s /bin/sh
-
-# change ownership to user=nobody, group=nobody
-chown -R nobody:nobody /var/www/bits /run /var/lib/nginx /var/log/nginx /usr/local/bin/composer /etc/nginx/http.d /usr/local/etc/php
-
-# switch nobody user
-su nobody -s /bin/sh
-
 # Let supervisord start Nginx & PHP-FPM
 exec /usr/bin/supervisord -c /etc/supervisor/conf.d/supervisord.conf
