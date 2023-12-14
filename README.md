@@ -137,7 +137,7 @@ For example, use this docker image to deploy a **Laravel 10** project.
 Dockerfile:
 
 ```dockerfile
-FROM bitscoid/nginx-php-nodejs
+FROM bantenitsolutions/nginx-php-nodejs
 
 # copy source code
 COPY . /var/www/bits
@@ -145,7 +145,7 @@ COPY . /var/www/bits
 # run.sh will replace default web root from /var/www/bits to $WEBROOT
 ENV WEBROOT /var/www/bits/public
 
-# run.sh will use redis as session store with docker container name $PHP_REDIS_SESSION_HOST
+# run.sh will use redis as session store with docker container name $REDIS_HOST
 ENV REDIS_HOST redis
 
 # download required node/php packages, 
