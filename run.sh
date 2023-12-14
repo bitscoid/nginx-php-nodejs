@@ -42,7 +42,7 @@ fi
 chown -R nobody:nobody /var/www/bits /run /var/lib/nginx /var/log/nginx /usr/local/bin/composer /etc/nginx/http.d /usr/local/etc/php
 
 # open with sudo a new shell as user nobody and call your application
-su nobody -s /bin/sh
+#su nobody -s /bin/sh
 
 # Let supervisord start Nginx & PHP-FPM
 exec /usr/bin/supervisord -c /etc/supervisor/conf.d/supervisord.conf
