@@ -21,6 +21,7 @@ EXPOSE 80 443
 
 # Script Installation
 COPY run.sh /run.sh
+RUN chmod a+x /run.sh
 
 # Run Script
 CMD ["/run.sh"]
