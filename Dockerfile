@@ -20,8 +20,10 @@ COPY --from=nodejs /usr/local /usr/local
 EXPOSE 80 443
 
 # Script Installation
+USER root
 COPY run.sh /usr/local/run.sh
 RUN chmod a+x /usr/local/run.sh
+USER nobody
 
 # Run Script
 CMD ["/usr/local/run.sh"]
