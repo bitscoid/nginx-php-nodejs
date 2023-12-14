@@ -16,8 +16,8 @@
 
   <div align="center">
     <a href="https://hub.docker.com/r/bantenitsolutions/nginx-php-nodejs/" title="Nginx PHP NodeJS"><img src="https://img.shields.io/docker/pulls/bantenitsolutions/nginx-php-nodejs.svg"></a> 
-    <a href="https://hub.docker.com/r/bantenitsolutions/nginx-php-nodejs/" title="Docker Image Version (tag latest semver)"><img src="https://img.shields.io/docker/v/bantenitsolutions/nginx-php-nodejs/2.0"></a> 
-    <a href="https://hub.docker.com/r/bantenitsolutions/nginx-php-nodejs/tags" title="Docker Image Size (tag)"><img src="https://img.shields.io/docker/image-size/bantenitsolutions/nginx-php-nodejs/2.0"></a> 
+    <a href="https://hub.docker.com/r/bantenitsolutions/nginx-php-nodejs/" title="Docker Image Version (tag latest semver)"><img src="https://img.shields.io/docker/v/bantenitsolutions/nginx-php-nodejs/1.0"></a> 
+    <a href="https://hub.docker.com/r/bantenitsolutions/nginx-php-nodejs/tags" title="Docker Image Size (tag)"><img src="https://img.shields.io/docker/image-size/bantenitsolutions/nginx-php-nodejs/1.0"></a> 
     <a href="https://hub.docker.com/r/bantenitsolutions/nginx-php-nodejs/" title="Nginx 1.25.3"><img src="https://img.shields.io/badge/nginx-1.25.3-brightgreen.svg"></a> 
     <a href="https://hub.docker.com/r/bantenitsolutions/nginx-php-nodejs/" title="PHP 8.3"><img src="https://img.shields.io/badge/php-8.3-brightgreen.svg"></a> 
     <a href="https://github.com/bitscoid/nginx-php-nodejs/actions/workflows/build.yml" title="Docker Test Image"><img src="https://github.com/bitscoid/nginx-php-nodejs/actions/workflows/build.yml/badge.svg?branch=master"></a> 
