@@ -9,7 +9,7 @@ LABEL org.opencontainers.image.vendor="Nurul Imam" \
     org.opencontainers.image.source="https://github.com/bitscoid/nginx-php-nodejs" \
     org.opencontainers.image.title="Nginx, PHP & NodeJS of Alpine" \
     org.opencontainers.image.description="Nginx 1.25, PHP 8.3 & NodeJS 21.4 with essential php extensions on top of latest Alpine Linux." \
-    org.opencontainers.image.version="1.0" \
+    org.opencontainers.image.version="2.0" \
     org.opencontainers.image.documentation="https://github.com/bitscoid/nginx-php-nodejs"
 
 WORKDIR /var/www/bits
