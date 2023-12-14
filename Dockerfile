@@ -13,7 +13,7 @@ LABEL org.opencontainers.image.vendor="Nurul Imam" \
     org.opencontainers.image.documentation="https://github.com/bitscoid/nginx-php-nodejs"
 
 WORKDIR /var/www/bits
-COPY app /var/www/bits
+
 COPY --from=nodejs /opt /opt
 COPY --from=nodejs /usr/local /usr/local
 
