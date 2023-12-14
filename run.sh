@@ -28,11 +28,10 @@ if [ ! -z "$REDIS_HOST" ]; then
  sed -i "s/;session.save_path = "/tmp"/;session.save_path = "tcp:\/\/'${REDIS_HOST}':6379"/g" /usr/local/etc/php/php.ini
 fi
 
-# Run custom scripts
+# Run Composer & NodeJS
 if [[ "$RUN_SCRIPTS" == "1" ]] ; then
-  if [ -d "/var/www/bits/scripts/" ]; then
-    chmod -Rf 750 /var/www/bits/scripts/*; sync;
-    for i in `ls /var/www/bits/scripts/`; do /var/www/bits/scripts/$i ; done
+  if [ -d "/var/www/bits/" ]; then
+    composer install && composer update && npm install && npm run dev
   else
     echo "Can't find script directory"
   fi

@@ -23,6 +23,11 @@ EXPOSE 80 443
 USER root
 COPY run.sh /usr/local/run.sh
 RUN chmod a+x /usr/local/run.sh
+
+# Make sure files/folders run under the nobody user
+RUN chown -R nobody:nobody /var/www/bits /run /var/lib/nginx /var/log/nginx /usr/local/bin/composer /etc/nginx/http.d /usr/local/etc/php
+
+# Back to nobody user
 USER nobody
 
 # Run Script
