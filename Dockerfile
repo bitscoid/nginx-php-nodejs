@@ -20,11 +20,11 @@ COPY --from=nodejs /usr/local /usr/local
 EXPOSE 80 443
 
 # Script Installation
-COPY run.sh /run.sh
-RUN chmod a+x /run.sh
+COPY run.sh /usr/local/run.sh
+RUN chmod a+x /usr/local/run.sh
 
 # Run Script
-CMD ["/run.sh"]
+CMD ["/usr/local/run.sh"]
 
 # Configure a healthcheck to validate that everything is up&running
 HEALTHCHECK --timeout=10s CMD curl --silent --fail http://127.0.0.1
